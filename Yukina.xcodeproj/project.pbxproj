@@ -7,9 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		165FD0111AB9312200C4818C /* YKRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165FD0101AB9312200C4818C /* YKRequestTests.swift */; };
+		165FD0411AB95AA800C4818C /* YKRouteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165FD0401AB95AA800C4818C /* YKRouteTests.swift */; };
 		166916421AB575A0000B728C /* Yukina.h in Headers */ = {isa = PBXBuildFile; fileRef = 166916411AB575A0000B728C /* Yukina.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		166916481AB575A0000B728C /* Yukina.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1669163C1AB575A0000B728C /* Yukina.framework */; };
 		1669164F1AB575A0000B728C /* YukinaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1669164E1AB575A0000B728C /* YukinaTests.swift */; };
+		166916871AB57607000B728C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166916861AB57607000B728C /* AppDelegate.swift */; };
+		166916891AB57607000B728C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166916881AB57607000B728C /* ViewController.swift */; };
+		1669168C1AB57607000B728C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1669168A1AB57607000B728C /* Main.storyboard */; };
+		1669168E1AB57607000B728C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1669168D1AB57607000B728C /* Images.xcassets */; };
+		166916911AB57607000B728C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1669168F1AB57607000B728C /* LaunchScreen.xib */; };
+		166916AC1AB57668000B728C /* YKConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166916A41AB57668000B728C /* YKConnection.swift */; };
+		166916AD1AB57668000B728C /* YKURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166916A51AB57668000B728C /* YKURL.swift */; };
+		166916AE1AB57668000B728C /* YKRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166916A61AB57668000B728C /* YKRequest.swift */; };
+		166916AF1AB57668000B728C /* YKRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166916A71AB57668000B728C /* YKRouter.swift */; };
+		166916B01AB57668000B728C /* YKRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166916A81AB57668000B728C /* YKRoute.swift */; };
+		166916B11AB57668000B728C /* YKInternalHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166916A91AB57668000B728C /* YKInternalHelper.swift */; };
+		166916B21AB57668000B728C /* Yukina.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166916AA1AB57668000B728C /* Yukina.swift */; };
+		166916B31AB57668000B728C /* YKResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166916AB1AB57668000B728C /* YKResponse.swift */; };
+		166916B41AB5778F000B728C /* Yukina.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1669163C1AB575A0000B728C /* Yukina.framework */; };
+		166916BE1AB57A76000B728C /* MessageRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166916BD1AB57A76000B728C /* MessageRoutes.swift */; };
+		166916C01AB57B71000B728C /* MessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166916BF1AB57B71000B728C /* MessageController.swift */; };
+		166916C21AB57C54000B728C /* MessagePolicies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166916C11AB57C54000B728C /* MessagePolicies.swift */; };
+		166916C41AB57E43000B728C /* AppLinkMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166916C31AB57E43000B728C /* AppLinkMiddleware.swift */; };
+		1677C8791AB6B7E500984293 /* AppLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1677C8781AB6B7E500984293 /* AppLink.swift */; };
+		1677C87A1AB801FB00984293 /* YKRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166916A61AB57668000B728C /* YKRequest.swift */; };
+		1677C87B1AB8020200984293 /* Yukina.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166916AA1AB57668000B728C /* Yukina.swift */; };
+		1677C87C1AB8020C00984293 /* YKResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166916AB1AB57668000B728C /* YKResponse.swift */; };
+		1677C87D1AB8021000984293 /* YKURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166916A51AB57668000B728C /* YKURL.swift */; };
+		1677C87E1AB8021400984293 /* YKRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166916A81AB57668000B728C /* YKRoute.swift */; };
+		1677C87F1AB8021700984293 /* YKRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166916A71AB57668000B728C /* YKRouter.swift */; };
+		1677C8801AB8021B00984293 /* YKConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166916A41AB57668000B728C /* YKConnection.swift */; };
+		1677C8811AB8021F00984293 /* YKInternalHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166916A91AB57668000B728C /* YKInternalHelper.swift */; };
+		61A273E2EAF6D5031B47B036 /* Pods_YukinaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB0F7479C15BE067F6B89EE /* Pods_YukinaTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -20,15 +50,47 @@
 			remoteGlobalIDString = 1669163B1AB5759F000B728C;
 			remoteInfo = Yukina;
 		};
+		166916B51AB57795000B728C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 166916331AB5759F000B728C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1669163B1AB5759F000B728C;
+			remoteInfo = Yukina;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		165FD0101AB9312200C4818C /* YKRequestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YKRequestTests.swift; sourceTree = "<group>"; };
+		165FD0401AB95AA800C4818C /* YKRouteTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YKRouteTests.swift; sourceTree = "<group>"; };
 		1669163C1AB575A0000B728C /* Yukina.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Yukina.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		166916401AB575A0000B728C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		166916411AB575A0000B728C /* Yukina.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Yukina.h; sourceTree = "<group>"; };
 		166916471AB575A0000B728C /* YukinaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YukinaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1669164D1AB575A0000B728C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1669164E1AB575A0000B728C /* YukinaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YukinaTests.swift; sourceTree = "<group>"; };
+		166916821AB57607000B728C /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		166916851AB57607000B728C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		166916861AB57607000B728C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		166916881AB57607000B728C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1669168B1AB57607000B728C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1669168D1AB57607000B728C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		166916901AB57607000B728C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		166916A41AB57668000B728C /* YKConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YKConnection.swift; sourceTree = "<group>"; };
+		166916A51AB57668000B728C /* YKURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YKURL.swift; sourceTree = "<group>"; };
+		166916A61AB57668000B728C /* YKRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YKRequest.swift; sourceTree = "<group>"; };
+		166916A71AB57668000B728C /* YKRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YKRouter.swift; sourceTree = "<group>"; };
+		166916A81AB57668000B728C /* YKRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YKRoute.swift; sourceTree = "<group>"; };
+		166916A91AB57668000B728C /* YKInternalHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YKInternalHelper.swift; sourceTree = "<group>"; };
+		166916AA1AB57668000B728C /* Yukina.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yukina.swift; sourceTree = "<group>"; };
+		166916AB1AB57668000B728C /* YKResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YKResponse.swift; sourceTree = "<group>"; };
+		166916BD1AB57A76000B728C /* MessageRoutes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessageRoutes.swift; path = DeepLink/Routes/MessageRoutes.swift; sourceTree = "<group>"; };
+		166916BF1AB57B71000B728C /* MessageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessageController.swift; path = DeepLink/Controllers/MessageController.swift; sourceTree = "<group>"; };
+		166916C11AB57C54000B728C /* MessagePolicies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessagePolicies.swift; path = DeepLink/Policies/MessagePolicies.swift; sourceTree = "<group>"; };
+		166916C31AB57E43000B728C /* AppLinkMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppLinkMiddleware.swift; path = DeepLink/Middlewares/AppLinkMiddleware.swift; sourceTree = "<group>"; };
+		1677C8781AB6B7E500984293 /* AppLink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppLink.swift; path = DeepLink/Models/AppLink.swift; sourceTree = "<group>"; };
+		2FB0F7479C15BE067F6B89EE /* Pods_YukinaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YukinaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A29B4D6D4AC562B7EEFBFCCA /* Pods-YukinaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YukinaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YukinaTests/Pods-YukinaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A2ED3C1EDE3D0803332538CF /* Pods-YukinaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YukinaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YukinaTests/Pods-YukinaTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,18 +106,38 @@
 			buildActionMask = 2147483647;
 			files = (
 				166916481AB575A0000B728C /* Yukina.framework in Frameworks */,
+				61A273E2EAF6D5031B47B036 /* Pods_YukinaTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1669167F1AB57607000B728C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				166916B41AB5778F000B728C /* Yukina.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15E2CF077E6D29CA3A060CBC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2FB0F7479C15BE067F6B89EE /* Pods_YukinaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		166916321AB5759F000B728C = {
 			isa = PBXGroup;
 			children = (
 				1669163E1AB575A0000B728C /* Yukina */,
 				1669164B1AB575A0000B728C /* YukinaTests */,
+				166916831AB57607000B728C /* Example */,
 				1669163D1AB575A0000B728C /* Products */,
+				2039767F833064F78328CED4 /* Pods */,
+				15E2CF077E6D29CA3A060CBC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +146,7 @@
 			children = (
 				1669163C1AB575A0000B728C /* Yukina.framework */,
 				166916471AB575A0000B728C /* YukinaTests.xctest */,
+				166916821AB57607000B728C /* Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,6 +155,14 @@
 			isa = PBXGroup;
 			children = (
 				166916411AB575A0000B728C /* Yukina.h */,
+				166916AA1AB57668000B728C /* Yukina.swift */,
+				166916A61AB57668000B728C /* YKRequest.swift */,
+				166916AB1AB57668000B728C /* YKResponse.swift */,
+				166916A51AB57668000B728C /* YKURL.swift */,
+				166916A81AB57668000B728C /* YKRoute.swift */,
+				166916A71AB57668000B728C /* YKRouter.swift */,
+				166916A41AB57668000B728C /* YKConnection.swift */,
+				166916A91AB57668000B728C /* YKInternalHelper.swift */,
 				1669163F1AB575A0000B728C /* Supporting Files */,
 			);
 			path = Yukina;
@@ -89,6 +180,8 @@
 			isa = PBXGroup;
 			children = (
 				1669164E1AB575A0000B728C /* YukinaTests.swift */,
+				165FD0101AB9312200C4818C /* YKRequestTests.swift */,
+				165FD0401AB95AA800C4818C /* YKRouteTests.swift */,
 				1669164C1AB575A0000B728C /* Supporting Files */,
 			);
 			path = YukinaTests;
@@ -100,6 +193,89 @@
 				1669164D1AB575A0000B728C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		166916831AB57607000B728C /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				166916B71AB57908000B728C /* Deep Link */,
+				166916861AB57607000B728C /* AppDelegate.swift */,
+				166916881AB57607000B728C /* ViewController.swift */,
+				1669168A1AB57607000B728C /* Main.storyboard */,
+				1669168D1AB57607000B728C /* Images.xcassets */,
+				1669168F1AB57607000B728C /* LaunchScreen.xib */,
+				166916841AB57607000B728C /* Supporting Files */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		166916841AB57607000B728C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				166916851AB57607000B728C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		166916B71AB57908000B728C /* Deep Link */ = {
+			isa = PBXGroup;
+			children = (
+				166916B81AB5792F000B728C /* Controllers */,
+				1677C8771AB6B7CD00984293 /* Models */,
+				166916BB1AB5794A000B728C /* Middlewares */,
+				166916BA1AB57942000B728C /* Policies */,
+				166916B91AB57939000B728C /* Routes */,
+			);
+			name = "Deep Link";
+			sourceTree = "<group>";
+		};
+		166916B81AB5792F000B728C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				166916BF1AB57B71000B728C /* MessageController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		166916B91AB57939000B728C /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				166916BD1AB57A76000B728C /* MessageRoutes.swift */,
+			);
+			name = Routes;
+			sourceTree = "<group>";
+		};
+		166916BA1AB57942000B728C /* Policies */ = {
+			isa = PBXGroup;
+			children = (
+				166916C11AB57C54000B728C /* MessagePolicies.swift */,
+			);
+			name = Policies;
+			sourceTree = "<group>";
+		};
+		166916BB1AB5794A000B728C /* Middlewares */ = {
+			isa = PBXGroup;
+			children = (
+				166916C31AB57E43000B728C /* AppLinkMiddleware.swift */,
+			);
+			name = Middlewares;
+			sourceTree = "<group>";
+		};
+		1677C8771AB6B7CD00984293 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1677C8781AB6B7E500984293 /* AppLink.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		2039767F833064F78328CED4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A29B4D6D4AC562B7EEFBFCCA /* Pods-YukinaTests.debug.xcconfig */,
+				A2ED3C1EDE3D0803332538CF /* Pods-YukinaTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +314,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 166916551AB575A0000B728C /* Build configuration list for PBXNativeTarget "YukinaTests" */;
 			buildPhases = (
+				B0BA647698538C15AA42F11A /* Check Pods Manifest.lock */,
 				166916431AB575A0000B728C /* Sources */,
 				166916441AB575A0000B728C /* Frameworks */,
 				166916451AB575A0000B728C /* Resources */,
+				16E118E0ABEB2C52039AE671 /* Embed Pods Frameworks */,
+				DBCCA07AB627C7E4BE850DA2 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -151,6 +330,24 @@
 			productName = YukinaTests;
 			productReference = 166916471AB575A0000B728C /* YukinaTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		166916811AB57607000B728C /* Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 166916A21AB57607000B728C /* Build configuration list for PBXNativeTarget "Example" */;
+			buildPhases = (
+				1669167E1AB57607000B728C /* Sources */,
+				1669167F1AB57607000B728C /* Frameworks */,
+				166916801AB57607000B728C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				166916B61AB57795000B728C /* PBXTargetDependency */,
+			);
+			name = Example;
+			productName = Example;
+			productReference = 166916821AB57607000B728C /* Example.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -167,6 +364,9 @@
 					166916461AB575A0000B728C = {
 						CreatedOnToolsVersion = 6.3;
 					};
+					166916811AB57607000B728C = {
+						CreatedOnToolsVersion = 6.3;
+					};
 				};
 			};
 			buildConfigurationList = 166916361AB5759F000B728C /* Build configuration list for PBXProject "Yukina" */;
@@ -175,6 +375,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 166916321AB5759F000B728C;
 			productRefGroup = 1669163D1AB575A0000B728C /* Products */;
@@ -183,6 +384,7 @@
 			targets = (
 				1669163B1AB5759F000B728C /* Yukina */,
 				166916461AB575A0000B728C /* YukinaTests */,
+				166916811AB57607000B728C /* Example */,
 			);
 		};
 /* End PBXProject section */
@@ -202,13 +404,79 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		166916801AB57607000B728C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1669168C1AB57607000B728C /* Main.storyboard in Resources */,
+				166916911AB57607000B728C /* LaunchScreen.xib in Resources */,
+				1669168E1AB57607000B728C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		16E118E0ABEB2C52039AE671 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YukinaTests/Pods-YukinaTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0BA647698538C15AA42F11A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DBCCA07AB627C7E4BE850DA2 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YukinaTests/Pods-YukinaTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		166916371AB5759F000B728C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				166916AC1AB57668000B728C /* YKConnection.swift in Sources */,
+				166916B21AB57668000B728C /* Yukina.swift in Sources */,
+				166916AE1AB57668000B728C /* YKRequest.swift in Sources */,
+				166916B11AB57668000B728C /* YKInternalHelper.swift in Sources */,
+				166916B01AB57668000B728C /* YKRoute.swift in Sources */,
+				166916AF1AB57668000B728C /* YKRouter.swift in Sources */,
+				166916B31AB57668000B728C /* YKResponse.swift in Sources */,
+				166916AD1AB57668000B728C /* YKURL.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +484,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				165FD0111AB9312200C4818C /* YKRequestTests.swift in Sources */,
+				1677C87B1AB8020200984293 /* Yukina.swift in Sources */,
+				1677C8801AB8021B00984293 /* YKConnection.swift in Sources */,
+				1677C87F1AB8021700984293 /* YKRouter.swift in Sources */,
 				1669164F1AB575A0000B728C /* YukinaTests.swift in Sources */,
+				1677C87C1AB8020C00984293 /* YKResponse.swift in Sources */,
+				1677C8811AB8021F00984293 /* YKInternalHelper.swift in Sources */,
+				1677C87E1AB8021400984293 /* YKRoute.swift in Sources */,
+				165FD0411AB95AA800C4818C /* YKRouteTests.swift in Sources */,
+				1677C87A1AB801FB00984293 /* YKRequest.swift in Sources */,
+				1677C87D1AB8021000984293 /* YKURL.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1669167E1AB57607000B728C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				166916891AB57607000B728C /* ViewController.swift in Sources */,
+				166916C21AB57C54000B728C /* MessagePolicies.swift in Sources */,
+				166916BE1AB57A76000B728C /* MessageRoutes.swift in Sources */,
+				1677C8791AB6B7E500984293 /* AppLink.swift in Sources */,
+				166916871AB57607000B728C /* AppDelegate.swift in Sources */,
+				166916C01AB57B71000B728C /* MessageController.swift in Sources */,
+				166916C41AB57E43000B728C /* AppLinkMiddleware.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,7 +520,31 @@
 			target = 1669163B1AB5759F000B728C /* Yukina */;
 			targetProxy = 166916491AB575A0000B728C /* PBXContainerItemProxy */;
 		};
+		166916B61AB57795000B728C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1669163B1AB5759F000B728C /* Yukina */;
+			targetProxy = 166916B51AB57795000B728C /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1669168A1AB57607000B728C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1669168B1AB57607000B728C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1669168F1AB57607000B728C /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				166916901AB57607000B728C /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		166916501AB575A0000B728C /* Debug */ = {
@@ -350,6 +666,7 @@
 		};
 		166916561AB575A0000B728C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A29B4D6D4AC562B7EEFBFCCA /* Pods-YukinaTests.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -367,6 +684,7 @@
 		};
 		166916571AB575A0000B728C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2ED3C1EDE3D0803332538CF /* Pods-YukinaTests.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -374,6 +692,30 @@
 				);
 				INFOPLIST_FILE = YukinaTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1669169E1AB57607000B728C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Example/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1669169F1AB57607000B728C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Example/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -397,6 +739,7 @@
 				166916541AB575A0000B728C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		166916551AB575A0000B728C /* Build configuration list for PBXNativeTarget "YukinaTests" */ = {
 			isa = XCConfigurationList;
@@ -405,6 +748,16 @@
 				166916571AB575A0000B728C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		166916A21AB57607000B728C /* Build configuration list for PBXNativeTarget "Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1669169E1AB57607000B728C /* Debug */,
+				1669169F1AB57607000B728C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

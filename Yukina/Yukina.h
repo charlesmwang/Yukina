@@ -1,11 +1,3 @@
-//
-//  Yukina.h
-//  Yukina
-//
-//  Created by Charles Wang on 3/15/15.
-//  Copyright (c) 2015 charlesmwang. All rights reserved.
-//
-
 #import <UIKit/UIKit.h>
 
 //! Project version number for Yukina.
