@@ -1,12 +1,12 @@
 import Foundation
 
-public struct YKURL {
+struct YKURL {
     
-    public let parameterNames:[String]
-    public let registeredRoute: String
-    public var regexRouteURL: NSRegularExpression! // Let it crash for invalid route : This should be caught in debugging stage
+    let parameterNames:[String]
+    let registeredRoute: String
+    let regexRouteURL: NSRegularExpression! // Let it crash for invalid route : This should be caught in debugging stage
     
-    public init(routeURLScheme: String) {
+    init(routeURLScheme: String) {
         let url: NSURL? = NSURL(string: routeURLScheme)
         YKURL.verifyValidRouteURL(url, routeString: routeURLScheme)
         self.registeredRoute = routeURLScheme

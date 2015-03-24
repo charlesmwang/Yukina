@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		165FD0111AB9312200C4818C /* YKRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165FD0101AB9312200C4818C /* YKRequestTests.swift */; };
 		165FD0411AB95AA800C4818C /* YKRouteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165FD0401AB95AA800C4818C /* YKRouteTests.swift */; };
+		165FD0431AB9DA6B00C4818C /* YKURLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165FD0421AB9DA6B00C4818C /* YKURLTests.swift */; };
+		165FD0451AB9E25500C4818C /* YKConnectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165FD0441AB9E25500C4818C /* YKConnectionTests.swift */; };
+		165FD0471AB9E28000C4818C /* YKResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165FD0461AB9E28000C4818C /* YKResponseTests.swift */; };
+		165FD07B1ABEAB3700C4818C /* YKRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165FD07A1ABEAB3700C4818C /* YKRouterTests.swift */; };
 		166916421AB575A0000B728C /* Yukina.h in Headers */ = {isa = PBXBuildFile; fileRef = 166916411AB575A0000B728C /* Yukina.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		166916481AB575A0000B728C /* Yukina.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1669163C1AB575A0000B728C /* Yukina.framework */; };
 		1669164F1AB575A0000B728C /* YukinaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1669164E1AB575A0000B728C /* YukinaTests.swift */; };
@@ -22,7 +26,7 @@
 		166916AE1AB57668000B728C /* YKRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166916A61AB57668000B728C /* YKRequest.swift */; };
 		166916AF1AB57668000B728C /* YKRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166916A71AB57668000B728C /* YKRouter.swift */; };
 		166916B01AB57668000B728C /* YKRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166916A81AB57668000B728C /* YKRoute.swift */; };
-		166916B11AB57668000B728C /* YKInternalHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166916A91AB57668000B728C /* YKInternalHelper.swift */; };
+		166916B11AB57668000B728C /* YKHelper_Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166916A91AB57668000B728C /* YKHelper_Internal.swift */; };
 		166916B21AB57668000B728C /* Yukina.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166916AA1AB57668000B728C /* Yukina.swift */; };
 		166916B31AB57668000B728C /* YKResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166916AB1AB57668000B728C /* YKResponse.swift */; };
 		166916B41AB5778F000B728C /* Yukina.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1669163C1AB575A0000B728C /* Yukina.framework */; };
@@ -38,7 +42,7 @@
 		1677C87E1AB8021400984293 /* YKRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166916A81AB57668000B728C /* YKRoute.swift */; };
 		1677C87F1AB8021700984293 /* YKRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166916A71AB57668000B728C /* YKRouter.swift */; };
 		1677C8801AB8021B00984293 /* YKConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166916A41AB57668000B728C /* YKConnection.swift */; };
-		1677C8811AB8021F00984293 /* YKInternalHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166916A91AB57668000B728C /* YKInternalHelper.swift */; };
+		1677C8811AB8021F00984293 /* YKHelper_Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166916A91AB57668000B728C /* YKHelper_Internal.swift */; };
 		61A273E2EAF6D5031B47B036 /* Pods_YukinaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB0F7479C15BE067F6B89EE /* Pods_YukinaTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -62,6 +66,10 @@
 /* Begin PBXFileReference section */
 		165FD0101AB9312200C4818C /* YKRequestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YKRequestTests.swift; sourceTree = "<group>"; };
 		165FD0401AB95AA800C4818C /* YKRouteTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YKRouteTests.swift; sourceTree = "<group>"; };
+		165FD0421AB9DA6B00C4818C /* YKURLTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YKURLTests.swift; sourceTree = "<group>"; };
+		165FD0441AB9E25500C4818C /* YKConnectionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YKConnectionTests.swift; sourceTree = "<group>"; };
+		165FD0461AB9E28000C4818C /* YKResponseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YKResponseTests.swift; sourceTree = "<group>"; };
+		165FD07A1ABEAB3700C4818C /* YKRouterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YKRouterTests.swift; sourceTree = "<group>"; };
 		1669163C1AB575A0000B728C /* Yukina.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Yukina.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		166916401AB575A0000B728C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		166916411AB575A0000B728C /* Yukina.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Yukina.h; sourceTree = "<group>"; };
@@ -80,7 +88,7 @@
 		166916A61AB57668000B728C /* YKRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YKRequest.swift; sourceTree = "<group>"; };
 		166916A71AB57668000B728C /* YKRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YKRouter.swift; sourceTree = "<group>"; };
 		166916A81AB57668000B728C /* YKRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YKRoute.swift; sourceTree = "<group>"; };
-		166916A91AB57668000B728C /* YKInternalHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YKInternalHelper.swift; sourceTree = "<group>"; };
+		166916A91AB57668000B728C /* YKHelper_Internal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YKHelper_Internal.swift; sourceTree = "<group>"; };
 		166916AA1AB57668000B728C /* Yukina.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yukina.swift; sourceTree = "<group>"; };
 		166916AB1AB57668000B728C /* YKResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YKResponse.swift; sourceTree = "<group>"; };
 		166916BD1AB57A76000B728C /* MessageRoutes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessageRoutes.swift; path = DeepLink/Routes/MessageRoutes.swift; sourceTree = "<group>"; };
@@ -162,7 +170,7 @@
 				166916A81AB57668000B728C /* YKRoute.swift */,
 				166916A71AB57668000B728C /* YKRouter.swift */,
 				166916A41AB57668000B728C /* YKConnection.swift */,
-				166916A91AB57668000B728C /* YKInternalHelper.swift */,
+				166916A91AB57668000B728C /* YKHelper_Internal.swift */,
 				1669163F1AB575A0000B728C /* Supporting Files */,
 			);
 			path = Yukina;
@@ -181,7 +189,11 @@
 			children = (
 				1669164E1AB575A0000B728C /* YukinaTests.swift */,
 				165FD0101AB9312200C4818C /* YKRequestTests.swift */,
+				165FD0461AB9E28000C4818C /* YKResponseTests.swift */,
 				165FD0401AB95AA800C4818C /* YKRouteTests.swift */,
+				165FD0421AB9DA6B00C4818C /* YKURLTests.swift */,
+				165FD0441AB9E25500C4818C /* YKConnectionTests.swift */,
+				165FD07A1ABEAB3700C4818C /* YKRouterTests.swift */,
 				1669164C1AB575A0000B728C /* Supporting Files */,
 			);
 			path = YukinaTests;
@@ -472,7 +484,7 @@
 				166916AC1AB57668000B728C /* YKConnection.swift in Sources */,
 				166916B21AB57668000B728C /* Yukina.swift in Sources */,
 				166916AE1AB57668000B728C /* YKRequest.swift in Sources */,
-				166916B11AB57668000B728C /* YKInternalHelper.swift in Sources */,
+				166916B11AB57668000B728C /* YKHelper_Internal.swift in Sources */,
 				166916B01AB57668000B728C /* YKRoute.swift in Sources */,
 				166916AF1AB57668000B728C /* YKRouter.swift in Sources */,
 				166916B31AB57668000B728C /* YKResponse.swift in Sources */,
@@ -485,12 +497,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				165FD0111AB9312200C4818C /* YKRequestTests.swift in Sources */,
+				165FD0431AB9DA6B00C4818C /* YKURLTests.swift in Sources */,
+				165FD0471AB9E28000C4818C /* YKResponseTests.swift in Sources */,
 				1677C87B1AB8020200984293 /* Yukina.swift in Sources */,
 				1677C8801AB8021B00984293 /* YKConnection.swift in Sources */,
+				165FD07B1ABEAB3700C4818C /* YKRouterTests.swift in Sources */,
 				1677C87F1AB8021700984293 /* YKRouter.swift in Sources */,
 				1669164F1AB575A0000B728C /* YukinaTests.swift in Sources */,
 				1677C87C1AB8020C00984293 /* YKResponse.swift in Sources */,
-				1677C8811AB8021F00984293 /* YKInternalHelper.swift in Sources */,
+				1677C8811AB8021F00984293 /* YKHelper_Internal.swift in Sources */,
+				165FD0451AB9E25500C4818C /* YKConnectionTests.swift in Sources */,
 				1677C87E1AB8021400984293 /* YKRoute.swift in Sources */,
 				165FD0411AB95AA800C4818C /* YKRouteTests.swift in Sources */,
 				1677C87A1AB801FB00984293 /* YKRequest.swift in Sources */,

@@ -1,7 +1,8 @@
 import Foundation
 
 public struct YKRoute {
-    public let url: YKURL
+    
+    let url: YKURL
     public let controller: YKRequestHandler
     public let policies: [YKPolicyHandler]?
     public let isPublic: Bool
