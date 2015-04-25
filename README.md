@@ -1,18 +1,15 @@
 # Yukina -雪菜-
-Yukina is a deep-linking framework for Swift. Inspired by popular web application frameworks including Ruby on Rails, Sails.js, Python Django, and Node.js.
+Yukina is a deep-linking framework for Swift. Inspired by popular web application frameworks including Ruby on Rails, and Sails.js.
 
 ##Requirements
 
-- iOS 8.3 Beta +
-- Xcode 6.3 Beta +
+- iOS 8.3 or greater
+- Xcode 6.3
 - Swift 1.2+
 
 ##Installation
 
-###CocoaPods
-```ruby
-pod 'Yukina'
-```
+###CocoaPods (Coming Soon)
 
 ##How to Use
 
@@ -24,7 +21,7 @@ AppName
 │   ViewController.swift
 │   ...
 │
-└───DeepLinking
+└───AppRouting
     │
     ├───Models
     │   │   AppLink.swift
@@ -50,35 +47,45 @@ AppName
 ```
 
 ###YKRoute
-By prepending a ":" to a path component, Yukina will extract that parameter. However, it could only match for digits only.
-For example, if the route is defined as "/messages/:message_id" and the request has a URL "/messages/1", the request parameters dictionary will have ["message_id":"1"].
+
+####Defining a Route
 
 ```Swift
+YKRoute(routeURLScheme: String, controller: (YKRequest) -> YKResponse, policies: [(YKRequest) -> YKPolicy], isPublic: Bool)
+// Example
 YKRoute(routeURLScheme: "/messages/:message_id", controller: MessageController.showMessages, policies: [MessagePolicies.isAuthenticated], isPublic: true)
 ```
 
-The controller is an action closure where the closure function must be in a format of:
+By prepending a ":" to a path component, Yukina extracts that path component and uses as a parameter name.
+
+```
+/messages/:message_id (message_id is the parameter name)
+/people/:person_id/messages/:message_id (person_id and message_id are the parameter names)
+```
+
+Yukina expects parameter values to be integers.
+For example, if the route is defined as "/messages/:message_id" and the request has a URL "/messages/1", the request parameters dictionary will have ["message_id":"1"].
+
+The controller is an action closure where the closure function must have a YKRequest as an argument and a YKResponse as a return value:
+
 ```Swift
  (YKRequest) -> YKResponse
 ```
 
 You can add multiple Policy closures to the policies.
+Please see Policy section for more details.
 
-You can set the route to be public or private.
-When set to public, other apps can access execute your route.
-When set to private, other apps would not be able to execute your route and you would get an YKResponse error object.
-
-See Policy for more details.
-
+You can set a route to be public or private.
+When set to public, other apps can execute your route.
+When set to private, other apps cannot execute your route and a YKResponse error is returned.
 
 ###YKRouter
 ```Swift
 let router: YKRouter = YKRouter(middlewares: [AppLinkMiddleware.appLinkParser], routes: [YKRoute(routeURLScheme: "/messages", controller: MessageController.showMessages, policies: [MessagePolicies.isAuthenticated], isPublic: true), ...])
 ```
 Note that the YKRouter object is not a singleton. You can make it to a singleton.
-###YKRequest
 
-Inside the controller, you can access the YKRequest object that contains these data:
+###YKRequest
 
 ```Swift
 public let routePath: String
@@ -90,20 +97,19 @@ public let sourceApplication: String?
 
 ###YKResponse
 
-You can access the YKResponse object that contains these data:
 ```Swift
 public let request: YKRequest
 public let data: [String: Any]
 public let status: YKResponseStatus
 ```
 
-All controllers need to return a YKResponse object.
+All controllers need to return a YKResponse.
 
-Inside the YKConnection methods, you can handle the response in there.
+YKResponse is handled inside the YKConnection functions.
 
 ###YKConnection
 
-Simply call: 
+Simply call:
 
 ```Swift
 YKConnection.send(urlString: "/messages", router: router, responseHandler: { (response) -> Void in
@@ -115,10 +121,10 @@ YKConnection.send(urlString: "/messages", router: router, responseHandler: { (re
 })
 ```
 
-To intercept deep links from other App, simply add this code inside the AppDelegate
+To intercept deep links from other Apps, simply add this code inside the AppDelegate
 
 ```Swift
-func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject?) -> Bool {        
+func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject?) -> Bool {
     YKConnection.send(fromPublicURL: url, sourceApplication: sourceApplication, router: self.router, responseHandler: { (response: YKResponse) -> Void in
 		...
     })
@@ -126,24 +132,20 @@ func application(application: UIApplication, openURL url: NSURL, sourceApplicati
 }
 ```
 
-If you don't want to keep inserting the YKRouter object inside the YKConnection methods, you can create a default connection struct:
-
-```Swift
-struct YKDefaultConnection {
-    public static func send(#request: YKRequest, responseHandler: YKResponseHandler) {
-        YKConnection.send(#request: request, router: SomeSingletonRouter.sharedInstance(), responseHandler: responseHandler) {
-			...
-    	}
-	}
-}
-```
-
 ###Middleware
 
-You can define middlewares in the router that can transform the request.
-For example in AppLinks, the AppLinks data is in the query string of the url.
-An AppLinks middleware can parse the query string and create an AppLinks object and attach it to the request.
-To insert data use this method preferably:
+You can define custom middlewares in the router that can transform all incoming requests.
+
+A middleware function has a YKRequest as an argument and a YKResponse as a return value.
+
+```Swift
+(YKRequest) -> YKRequest
+```
+
+For example for AppLinks, the AppLinks data is in the query string of the url.
+The AppLinks middleware can parse the query string and create an AppLinks object and attach it to the request.
+
+To insert data recreate another YKRequest:
 
 ```Swift
 public init(request: YKRequest, additionalData: [String: Any])
@@ -155,45 +157,57 @@ func sampleMiddleware(#request: YKRequest) -> YKRequest {
 	if request.sourceApplication == "someApplication" {
 		...
 		return YKRequest(request: request, additionalData: ["someApplicationData": SomeObject])
-	} 
+	}
 	return request
 }
 ```
 
-Note that all requests will run through the Middleware(s) defined in the router.
-Middleware should be independent with other middlewares
+Note that all requests run through the Middleware(s) defined in the router.
+Middleware should be independent with other middlewares.
 
 ###Policy
 
-You can filter the reqeust by creating policies such that the policies need to be satisfied in order to execute the controller
-Policy created should be independent with other policy.
+You can filter the request by creating policies such that the policies need to be satisfied in order to execute the controller.
+
+A policy function has a YKRequest as an argument and a YKPolicy as a return value.
+
+```Swift
+(YKResponse) -> YKPolicy
+
+// public enum YKPolicy {
+//    case Verfied
+//    case Failed(YKResponse)
+// }
+```
+
+Policy defined should be independent with other policy.
+
+```
 (Policy A [Verified]) -> (Policy B [Failed]) = Failed
 (Policy B [Failed]) -> (Policy A [Verified]) = Failed
+```
 
 Example
 ```Swift
 func somePolicy(#request: request) -> YKPolicy {
 	...
-	// if policy failed
+	// For failure policy
 	return YKPolicy.Failed(YKResponse(request: request, status: YKResponseStatus.Error(...), data: nil))
 	// otherwise
 	return YKPolicy.Verfied
 }
 ```
 
-If the policy fails, insert the YKResponse object inside the YKPolicy.Failed.
+If a policy fails, insert a YKResponse inside the YKPolicy.Failed.
 
 ##Example
-Please look at the Example App for the basic use of the Yukina framework.
+Please look at the Example App for the basic use of the framework.
 
 ##Custom Middlewares
 1. AppLinks [TBA]
 
 ##Objective-C Support
-I have no plan for Objective-C support. It may work for it, but I don't have any gurantee of it. 
-
-##Pre Swift 1.2
-I am working on porting it to Swift 1.1 (Xcode 6.2)
+I have no plan for Objective-C support. It may work for it, but I don't have any gurantee of it.
 
 ## License
 
